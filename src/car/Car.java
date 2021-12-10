@@ -12,8 +12,11 @@ public class Car {
     //int ist ein VariablenTyp Beispiel: 1 223 4334 3423
     int horsePower;
     String type;
-    String year;
+    //int bezeichnet eine Jahres zahl
+    int year;
     String owner;
+    int doors;
+    int tires;
 
 
 }
