@@ -1,5 +1,7 @@
 package car;
 
+import java.util.Objects;
+
 public class Car {
     //Atribut die Farbe beschreibt
     public String color;
@@ -28,11 +30,37 @@ public class Car {
     int doors;
     int tires;
 
+    //km/h
+    double speed;
+
+    double consumption;
+
     //Constructor einbauen...
-    public Car(String color, String manufacturer){
+    public Car(String color, String manufacturer, boolean driving, boolean broken, int horsePower, String type,
+               String owner, int year, int doors, int tires, double speed, double consumption){
         this.color = color;
         this.manufacturer = manufacturer;
+        this.driving = driving;
+        this.broken = broken;
+        this.horsePower = horsePower;
+        this.type = type;
+        this.owner = owner;
+        this.doors = doors;
+        this.tires = tires;
+        this.year = year;
+        this.speed = speed;
+        this.consumption = consumption;
     }
-
+    public double speedCheck (String unit) throws Exception {
+        if (Objects.equals(unit, "mp/h")) {
+            double speedMph = speed * 0.62;
+            return speedMph;
+        } else if (Objects.equals(unit, "km/h")) {
+            return speed;
+        } else {
+            System.out.println("unit is unknown");
+            throw new Exception("Failure");
+        }
+    }
 }
 
