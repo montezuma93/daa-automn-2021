@@ -2,7 +2,7 @@ package car;
 
 public class Car {
     //Atribut die Farbe beschreibt
-    String color;
+    public String color;
     //Atribut die Name von Auto Marke. String ist ein Variablen Typ - Beispiel : "jfsodfksnj"
     String manufacturer;
     //ob das Auto funktioniert
@@ -17,6 +17,15 @@ public class Car {
     String owner;
     int doors;
     int tires;
+
+    //Constructor einbauen...
+    public Car(String color){
+        this.color = color;
+        manufacturer = "Benz";
+
+
+
+    }
 
 }
 
