@@ -3,7 +3,7 @@ public class Musikspieler {
     String name;
     int alter;
     Instrument instrument;
-
+    //constructor
     Musikspieler (String nameM, int alterM){
         this.name = nameM;
         this.alter = alterM;
