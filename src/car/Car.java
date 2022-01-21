@@ -1,4 +1,4 @@
-package car;
+package Car;
 
 import java.util.Objects;
 
@@ -35,9 +35,15 @@ public class Car {
 
     double consumption;
 
+    public double getL100km() {
+        return l100km;
+    }
+
+    double l100km;
+
     //Constructor einbauen...
     public Car(String color, String manufacturer, boolean driving, boolean broken, int horsePower, String type,
-               String owner, int year, int doors, int tires, double speed, double consumption){
+               String owner, int year, int doors, int tires, double speed, double consumption, double l100km){
         this.color = color;
         this.manufacturer = manufacturer;
         this.driving = driving;
@@ -50,6 +56,7 @@ public class Car {
         this.year = year;
         this.speed = speed;
         this.consumption = consumption;
+        this.l100km = l100km;
     }
     public double speedCheck (String unit) throws Exception {
         if (Objects.equals(unit, "mp/h")) {
@@ -61,6 +68,10 @@ public class Car {
             System.out.println("unit is unknown");
             throw new Exception("Failure");
         }
+    }
+        public double getTotalConsumptionOfDistance (double givenDistance) {
+            return givenDistance / 100 * l100km;
+
     }
 }
 
