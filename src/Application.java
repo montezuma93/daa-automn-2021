@@ -1,6 +1,6 @@
-import Car.Car;
-import Car.Lkw;
-import Car.Vehicle;
+import car.Car;
+import car.Lkw;
+import car.Vehicle;
 
 public class Application {
 
@@ -9,10 +9,7 @@ public class Application {
                     "Öl Schneider", 2018, 2, 90, 18, 16);
             Car myCar = new Car("Surf Green", "Audi", true, false, 150,
                     "Cabrio", "Enes", 2010, 2, 250,11.2, 11);
-            if (myLkw instanceof Vehicle){
-                System.out.println("Lkw ist von Typ Vehicle: ");
-            }
-            System.out.println(myLkw instanceof Vehicle);
+
             System.out.println(myCar.color);
             System.out.println(myCar.getManufacturer());
             System.out.println(myCar.speedCheck("km/h"));

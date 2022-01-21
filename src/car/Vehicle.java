@@ -1,4 +1,4 @@
-package Car;
+package car;
 
 abstract public class Vehicle {
     //Atribut die Farbe beschreibt
