@@ -20,5 +20,7 @@ public class Board {
 
         this.fields[0] = street1;
         this.fields[1] = trainSt1;
+        this.players.get(0).buy(street1);
+
     }
 }
