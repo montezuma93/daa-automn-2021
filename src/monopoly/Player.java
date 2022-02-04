@@ -9,9 +9,16 @@ public class Player {
 
     }
     public void buy(Field fieldToBuy){
-        System.out.println(fieldToBuy.player);
+        if (!fieldToBuy.ownerShip){
+        System.out.println(currency);
         fieldToBuy.player=this;
-        System.out.println(fieldToBuy.player);
+        this.currency = this.currency - fieldToBuy.price;
+        fieldToBuy.ownerShip=true;
+        }
+        else {
+            String message = "Die Strasse: %s ist bereits durch Spieler %s belegt";
+            System.out.printf((message) + "%n",fieldToBuy.name,fieldToBuy.player.name);}
+
     }
 }
 
