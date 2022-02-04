@@ -7,4 +7,8 @@ public class Street extends Field{
         super(name, price);
         this.color = color;
     }
+    public int calculateRent(){
+        //ToDo: Variablen Häuser auf einer Strasse, Wie hoch ist die Basismiete, Miete pro Haus,
+        return 0;
+    }
 }

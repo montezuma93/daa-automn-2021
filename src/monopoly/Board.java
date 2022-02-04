@@ -1,5 +1,6 @@
 package monopoly;
 
+import java.util.Collections;
 import java.util.List;
 
 public class Board {
@@ -7,6 +8,7 @@ public class Board {
     Field[] fields;
     public Board(List<Player> players){
         this.players=players;
+
 
     }
     public void initialize(){
