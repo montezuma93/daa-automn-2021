@@ -25,7 +25,7 @@ public class Player {
     }
     public void buyHouse(){
         //ToDo: Haus auf einer Strasse hinzufügen, Beachte Strasse Ownership, Limit Häuser,
-        //Dies ist unsere erste gemeinsame Änderung
+        //ToDo: Dies ist unsere erste gemeinsame Änderung
     }
 }
 
