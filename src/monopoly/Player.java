@@ -27,5 +27,6 @@ public class Player {
         //ToDo: Haus auf einer Strasse hinzufügen, Beachte Strasse Ownership, Limit Häuser,
         //ToDo: Dies ist unsere zweite gemeinsame Änderung
     }
+
 }
 
