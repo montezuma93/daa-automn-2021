@@ -13,7 +13,11 @@ public class AirportCompany {
         this.airportNetworks = new ArrayList<Airport>();
     }
 
-    public boolean exsistConnection(Airport start, Airport end){
+    /*public boolean exsistConnection(Airport start, Airport end){
         return false;
+    }*/
+
+    public boolean exsistConnection(Airport start, Airport end) {
+        return true;
     }
 }
