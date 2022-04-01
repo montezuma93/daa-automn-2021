@@ -16,6 +16,7 @@ class CustomerTest {
         assertEquals(300, karlHeinz.getMoney());
         karlHeinz.withdraw(200);
         assertEquals(100, karlHeinz.getMoney());
+        karlHeinz.printAccountStatement();
     }
 
 }
