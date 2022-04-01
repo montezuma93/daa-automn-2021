@@ -24,7 +24,7 @@ public class Customer {
             System.out.println("Not enough Money");
         }else {
             money = money - moneyToTake;
-            accountHistory.add("withdraw "+ moneyToTake +"/ Account Balance: " + money);
+            accountHistory.add("Withdraw: "+ moneyToTake +" / Account Balance: " + money);
         }
     }
 
@@ -38,7 +38,7 @@ public class Customer {
 
     public void deposit(double moneyToAdd){
         money=money+moneyToAdd;
-        accountHistory.add("deposit "+ moneyToAdd +"/ Account Balance: " + money);
+        accountHistory.add("Deposit: "+ moneyToAdd +" / Account Balance: " + money);
     }
 
     public double getMoney() {
