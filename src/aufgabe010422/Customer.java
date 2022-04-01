@@ -16,9 +16,18 @@ public class Customer {
         this.limit=limit;
         this.money=0;
     }
+    public void withdraw(double moneyToTake) {
+        if (moneyToTake >= money + limit) {
+            System.out.println("Not enough Money");
+        }else {
+            money = money - moneyToTake;
+            //money=1000000;
+        }
+    }
+
 
     public void deposit(double moneyToAdd){
-        money=moneyToAdd;
+        money=money+moneyToAdd;
     }
 
     public double getMoney() {
