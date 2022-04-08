@@ -1,3 +1,4 @@
+import Aufgabe080422.Calculator;
 import aufgabe010422.Bank;
 import aufgabe010422.Customer;
 import aufgabe2_010422.Airport;
@@ -6,11 +7,14 @@ import aufgabe2_010422.AirportCompany;
 public class Application {
 
         public static void main(String args[]) throws Exception {
+                int ergebnis = Calculator.ggt(6,4);
+                System.out.println(ergebnis);
                 //Bank sparkasse = new Bank();
                 //Customer karlHeinz = new Customer("Karl", "Heinz", 123456, -500);
                 //karlHeinz.deposit(100);
 
                 // List of Airports
+                /*
                 Airport berlin = new Airport("Berlin");
                 Airport paris = new Airport("Paris");
                 Airport london = new Airport("London");
@@ -81,7 +85,8 @@ public class Application {
                 //System.console().readLine();
 
                 condor.exsistConnection(berlin, rom);
-                System.out.println("Route available");
+                System.out.println("Route available");*/
+
 
         }
 }
