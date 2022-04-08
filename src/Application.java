@@ -4,16 +4,42 @@ import aufgabe010422.Customer;
 import aufgabe2_010422.Airport;
 import aufgabe2_010422.AirportCompany;
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class Application {
 
-        public static void main(String args[]) throws Exception {
-                int ergebnis = Calculator.ggt(6,4);
-                System.out.println(ergebnis);
-                //Bank sparkasse = new Bank();
-                //Customer karlHeinz = new Customer("Karl", "Heinz", 123456, -500);
-                //karlHeinz.deposit(100);
+    public static void main(String args[]) throws Exception {
 
-                // List of Airports
+        Random random = new Random();
+        int max = 10;
+        int min = 1;
+        int zufallsZahl = random.nextInt(max + min) + min;
+        Scanner sc = new Scanner(System.in);    //System.in is a standard input stream
+        int a = 0;
+        while (zufallsZahl != a) {
+            System.out.print("Bitte Nummer raten ");
+            a = sc.nextInt();
+            if (zufallsZahl == a) {
+                System.out.println("Richtig");
+            } else {
+                if (zufallsZahl > a) {
+                    System.out.println("Die Zahl ist zu klein. Neuer Versuch");
+                } else {
+                    System.out.println("Die zahl ist zu groß. Neuer Versuch");
+                }
+            }
+
+        }
+    }
+
+        //int ergebnis = Calculator.ggt(6,4);
+        //System.out.println(ergebnis);
+        //Bank sparkasse = new Bank();
+        //Customer karlHeinz = new Customer("Karl", "Heinz", 123456, -500);
+        //karlHeinz.deposit(100);
+
+        // List of Airports
                 /*
                 Airport berlin = new Airport("Berlin");
                 Airport paris = new Airport("Paris");
@@ -88,5 +114,5 @@ public class Application {
                 System.out.println("Route available");*/
 
 
-        }
-}
+    }
+
