@@ -9,6 +9,7 @@ public class Player {
 
     }
     public void buy(Field fieldToBuy){
+        System.out.println("Hello World");
         if (!fieldToBuy.ownerShip && this.currency>= fieldToBuy.price){
         System.out.println(currency);
         fieldToBuy.player=this;
